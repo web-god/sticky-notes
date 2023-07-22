@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Sticky Notes Using LocalStorage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<h1>Sticky Notes</h1>
+
+	<h3>Select different sticky notes and write your note.</h3>
+	<p>To Delete the sticky click on the note.</p>
+	<form>
+		<label for="note_color">Color: </label>
+		<select id="note_color">
+			<option value="LightGoldenRodYellow">yellow</option> <!-- #FAFAD2 -->
+			<option value="PaleGreen">green</option> <!-- #98FB98 -->
+			<option value="LightPink">pink</option> <!-- #FFB6C1 -->
+			<option value="LightBlue">blue</option> <!-- #ADD8E6 -->
+		</select>
+		<label for="note_text">Text:</label> <input type="text" id="note_text">
+		<input type="button" id="add_button" value="Add Sticky Note to Self">
+
+		<input type="button" id="clear_button" value="Clear all Sticky Notes">
+
+	</form>
+	
+	<ul id="stickies">
+	</ul>
+</body>
+</html>
